@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 32
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    // Networking
+    api "androidx.tonyodev.fetch2:xfetch2:3.1.6"
+    api "androidx.tonyodev.fetch2okhttp:xfetch2okhttp:3.1.6"
+//    implementation 'com.github.Blatzar:NiceHttp:0.3.0'
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.0"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.0"
+
+    // Async
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2'
+}

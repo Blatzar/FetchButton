@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lagradost.fetchbutton">
+    <application>
+        <service
+            android:name=".services.VideoDownloadService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+</manifest>
