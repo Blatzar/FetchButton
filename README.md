@@ -1,13 +1,13 @@
 # FetchButton
 
-[Work in progress]
+#### [Work in progress]
 
 Just a simple library to have a download button which works with Fetch. Mostly for personal usage.
 
 TODO:
-- [] Themeable/Attributes
-- [] Testing with recyclerview
-- [] More default download buttons
+- [ ] Themeable/Attributes
+- [ ] Testing with recyclerview
+- [ ] More default download buttons
 
 ### Usage:
 ```xml
